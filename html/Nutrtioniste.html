@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Nutritionuste.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="section2">
+  <div class="sec-container">
+
+    <!-- LEFT -->
+    <div class="sec-left">
+      <h2>Why Choose Our Nutritionist?</h2>
+
+      <div class="item">
+        <span>✔</span>
+        <div>
+          <h4>Personalized Diet Plans</h4>
+          <p>Programs designed according to your body and goals.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <span>✔</span>
+        <div>
+          <h4>Healthy & Balanced Approach</h4>
+          <p>No strict diets, just sustainable healthy habits.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <span>✔</span>
+        <div>
+          <h4>Continuous Follow-Up</h4>
+          <p>We track your progress and adjust your plan.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <span>✔</span>
+        <div>
+          <h4>Weight Loss & Fitness Goals</h4>
+          <p>Lose fat, gain muscle, or maintain your shape.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="sec-right">
+      <img src="../img/aqeela-removebg-preview.png" alt="">
+    </div>
+
+  </div>
+  </div>
+  <div class="section3">
+    <h1>Select your appointment date </h1>
+    <div class="calendar">
+  <div class="header">
+    <button id="prev">‹</button>
+    <h2 id="monthYear"></h2>
+    <button id="next">›</button>
+  </div>
+
+  <div class="days">
+    <div>Sun</div>
+    <div>Mon</div>
+    <div>Tue</div>
+    <div>Wed</div>
+    <div>Thu</div>
+    <div>Fri</div>
+    <div>Sat</div>
+  </div>
+
+  <div class="dates" id="dates"></div>
+</div>
+  </div>
+  <div class="upload-box" id="drop-area">
+  
+  <input type="file" id="fileInput" hidden>
+
+  <div class="content">
+    <img src="https://cdn-icons-png.flaticon.com/512/1829/1829586.png" width="60">
+
+    <h3>
+      Drag & drop <span>images</span>, <span>videos</span>, or any file
+    </h3>
+
+    <p>or <label for="fileInput">browse files</label> on your computer</p>
+
+    <button onclick="uploadFile()">Upload</button>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<script>
+const monthYear = document.getElementById("monthYear");
+const datesContainer = document.getElementById("dates");
+
+let date = new Date();
+
+function renderCalendar(){
+    const year = date.getFullYear();
+    const month = date.getMonth();
+
+    const firstDay = new Date(year, month, 1).getDay();
+    const lastDate = new Date(year, month + 1, 0).getDate();
+
+    monthYear.innerText = date.toLocaleString("en", {
+        month:"long",
+        year:"numeric"
+    });
+
+    datesContainer.innerHTML = "";
+
+    for(let i=0; i<firstDay; i++){
+        datesContainer.innerHTML += "<div></div>";
+    }
+
+    for(let d=1; d<=lastDate; d++){
+        let todayClass = "";
+        const today = new Date();
+
+        if(d === today.getDate() && month === today.getMonth() && year === today.getFullYear()){
+            todayClass = "today";
+        }
+
+        datesContainer.innerHTML += `<div class="${todayClass}">${d}</div>`;
+    }
+}
+
+document.getElementById("prev").onclick = () => {
+    date.setMonth(date.getMonth() - 1);
+    renderCalendar();
+};
+
+document.getElementById("next").onclick = () => {
+    date.setMonth(date.getMonth() + 1);
+    renderCalendar();
+};
+
+renderCalendar();
+
+
+const dropArea = document.getElementById("drop-area");
+const input = document.getElementById("fileInput");
+
+dropArea.addEventListener("dragover", (e)=>{
+    e.preventDefault();
+    dropArea.classList.add("active");
+});
+
+dropArea.addEventListener("dragleave", ()=>{
+    dropArea.classList.remove("active");
+});
+
+dropArea.addEventListener("drop", (e)=>{
+    e.preventDefault();
+    dropArea.classList.remove("active");
+
+    const file = e.dataTransfer.files[0];
+    console.log(file);
+});
+
+function uploadFile(){
+    const file = input.files[0];
+    if(!file){
+        alert("Choose file first!");
+        return;
+    }
+
+    console.log("Uploading:", file);
+}
+</script>
+</body>
+</html>

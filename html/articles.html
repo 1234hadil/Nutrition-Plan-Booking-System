@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nutrition Articles</title>
+<link rel="stylesheet" href="../css/articles.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Main Article -->
+    <div class="card">
+        <div class="title">Best Foods for Healthy Weight Loss in 2026</div>
+        <div class="meta">By Health Editorial • Nutrition • April 23, 2026</div>
+
+        <div class="hero">
+            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1200&q=80">
+        </div>
+
+        <div class="content">
+            <h2 class="section-title">Balanced Weight Loss Starts in the Kitchen</h2>
+
+            <p>
+                Losing weight successfully is not about starving yourself.
+                It is about choosing foods that keep you full, energized,
+                and within your calorie target.
+            </p>
+
+            <p>
+                Experts recommend meals rich in protein, fiber,
+                and healthy fats to reduce cravings and support metabolism.
+            </p>
+
+            <h2 class="section-title">Top Foods to Add</h2>
+
+            <ul class="bullets">
+                <li>Eggs and Greek yogurt for high protein breakfasts.</li>
+                <li>Chicken breast, tuna, and lentils for lean protein.</li>
+                <li>Oats, brown rice, and sweet potatoes for smart carbs.</li>
+                <li>Avocado, nuts, and olive oil for healthy fats.</li>
+                <li>Vegetables and berries for volume with fewer calories.</li>
+            </ul>
+
+            <h2 class="section-title">Simple Calorie Rule</h2>
+
+            <p>
+                Create a small calorie deficit of 300–500 calories daily,
+                combine it with walking or resistance training,
+                and stay consistent.
+            </p>
+
+            <div class="footer">5 min read • 1,245 views</div>
+        </div>
+    </div>
+
+
+    <!-- Sidebar -->
+    <div class="card sidebar">
+
+        <div class="share">
+            <div class="icon">f</div>
+            <div class="icon">x</div>
+            <div class="icon">in</div>
+            <div class="icon">@</div>
+        </div>
+
+        <h3>Related Articles</h3>
+
+        <div class="related">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=500&q=80">
+            <div>
+                <div class="txt">10 Low-Calorie Meals Under 400 Calories</div>
+                <div class="tag">Calories</div>
+            </div>
+        </div>
+
+        <div class="related">
+            <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=500&q=80">
+            <div>
+                <div class="txt">High Protein Breakfast Ideas for Fat Loss</div>
+                <div class="tag">Nutrition</div>
+            </div>
+        </div>
+
+        <div class="related">
+            <img src="https://images.unsplash.com/photo-1467453678174-768ec283a940?auto=format&fit=crop&w=500&q=80">
+            <div>
+                <div class="txt">How to Calculate Your Daily Calories Easily</div>
+                <div class="tag">Guide</div>
+            </div>
+        </div>
+
+        <div class="related">
+            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=500&q=80">
+            <div>
+                <div class="txt">Best Exercises to Burn Belly Fat Faster</div>
+                <div class="tag">Fitness</div>
+            </div>
+        </div>
+
+        <div class="related">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=500&q=80">
+            <div>
+                <div class="txt">Healthy Snacks That Stop Cravings</div>
+                <div class="tag">Food</div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<script>
+
+const articles = document.querySelectorAll(".related");
+const title = document.querySelector(".title");
+const meta = document.querySelector(".meta");
+const heroImg = document.querySelector(".hero img");
+const content = document.querySelector(".content");
+
+
+const data = [
+
+{
+title: "10 Low-Calorie Meals Under 400 Calories",
+meta: "By Health Editorial • Calories • April 23, 2026",
+img: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=80",
+html: `
+<h2 class="section-title">Eat More, Weigh Less</h2>
+<p>These meals are rich in fiber and protein while staying below 400 calories.</p>
+<ul class="bullets">
+<li>Chicken salad bowl</li>
+<li>Oatmeal with berries</li>
+<li>Grilled salmon vegetables</li>
+</ul>
+<div class="footer">4 min read • 980 views</div>
+`
+},
+
+{
+title: "High Protein Breakfast Ideas for Fat Loss",
+meta: "By Health Editorial • Protein • April 23, 2026",
+img: "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=80",
+html: `
+<h2 class="section-title">Start Strong</h2>
+<p>Protein breakfasts reduce hunger and support muscle retention.</p>
+<ul class="bullets">
+<li>Eggs + Toast</li>
+<li>Greek Yogurt</li>
+<li>Protein Smoothie</li>
+</ul>
+<div class="footer">5 min read • 1,102 views</div>
+`
+},
+
+{
+title: "How to Calculate Your Daily Calories Easily",
+meta: "By Health Editorial • Guide • April 23, 2026",
+img: "https://images.unsplash.com/photo-1467453678174-768ec283a940?auto=format&fit=crop&w=1200&q=80",
+html: `
+<h2 class="section-title">Know Your Needs</h2>
+<p>Your calorie needs depend on age, gender, activity and goal.</p>
+<p>Create a deficit of 300 to 500 calories for weight loss.</p>
+<div class="footer">6 min read • 1,560 views</div>
+`
+},
+
+{
+title: "Best Exercises to Burn Belly Fat Faster",
+meta: "By Health Editorial • Fitness • April 23, 2026",
+img: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=80",
+html: `
+<h2 class="section-title">Move Daily</h2>
+<p>Walking, HIIT, and strength training are powerful tools for fat loss.</p>
+<div class="footer">5 min read • 1,330 views</div>
+`
+},
+
+{
+title: "Healthy Snacks That Stop Cravings",
+meta: "By Health Editorial • Food • April 23, 2026",
+img: "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=80",
+html: `
+<h2 class="section-title">Snack Smart</h2>
+<p>Choose snacks with fiber and protein to stay full longer.</p>
+<ul class="bullets">
+<li>Apple + Peanut Butter</li>
+<li>Nuts</li>
+<li>Greek Yogurt</li>
+</ul>
+<div class="footer">3 min read • 770 views</div>
+`
+}
+
+];
+
+
+articles.forEach((item, index) => {
+
+item.style.cursor = "pointer";
+
+item.addEventListener("click", () => {
+
+title.innerText = data[index].title;
+meta.innerText = data[index].meta;
+heroImg.src = data[index].img;
+content.innerHTML = data[index].html;
+
+window.scrollTo({
+top: 0,
+behavior: "smooth"
+});
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
