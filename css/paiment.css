@@ -1,0 +1,167 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f8f2;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:30px;
+}
+
+.container{
+    width:1000px;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+h1{
+    color:#2e7d32;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#666;
+    margin-bottom:35px;
+}
+
+/* Payment Methods */
+
+.services{
+    display:flex;
+    gap:20px;
+    margin-bottom:40px;
+}
+
+.service{
+    flex:1;
+    border:2px solid #ddd;
+    padding:25px;
+    text-align:center;
+    border-radius:15px;
+    cursor:pointer;
+    transition:0.3s;
+    background:white;
+}
+
+/* First card green */
+
+.active{
+    border-color:#4caf50;
+    background:#eef8ee;
+}
+
+/* Hover effect */
+
+.service:hover{
+    border-color:#4caf50;
+    background:#eef8ee;
+    transform:translateY(-5px);
+}
+
+.service h2{
+    font-size:35px;
+    margin-bottom:10px;
+}
+
+.service p{
+    font-weight:bold;
+    color:#333;
+}
+
+/* Form */
+
+.form-container{
+    display:flex;
+    gap:40px;
+}
+
+.form-section{
+    flex:1;
+}
+
+.form-section h3{
+    margin-bottom:20px;
+    color:#2e7d32;
+}
+
+.input-group{
+    margin-bottom:18px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:7px;
+    color:#555;
+    font-size:14px;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    outline:none;
+}
+
+textarea{
+    height:100px;
+    resize:none;
+}
+
+.row{
+    display:flex;
+    gap:15px;
+}
+
+/* Buttons */
+
+.buttons{
+    display:flex;
+    justify-content:space-between;
+    margin-top:40px;
+}
+
+.btn{
+    padding:14px 28px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.cancel{
+    background:#eee;
+}
+
+.cancel:hover{
+    background:#ddd;
+}
+
+.back{
+    background:#c8e6c9;
+    color:#2e7d32;
+}
+
+.back:hover{
+    background:#b2dfb4;
+}
+
+.book{
+    background:#4caf50;
+    color:white;
+}
+
+.book:hover{
+    background:#388e3c;
+}

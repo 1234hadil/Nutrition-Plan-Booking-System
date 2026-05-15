@@ -17,10 +17,10 @@
            <div class="list">
                <ul>
                   <ul>
-                   <li><button>Home</button></li>
-                   <li><button>Contact</button></li>
-                   <li><button>About_Us </button></li>
-                    <li><button>Blog </button></li>
+                   <li><a href="home.html"><button>Home</button></a></li>
+                   <li><a href="#contact"><button>Contact</button></a></li>
+                   <li><a href="#about_us"><button>About_us</button></a></li>
+                   <li><a href="#blog"><button>Blog</button></a></li>
 
                   </ul>
                </ul>
@@ -28,11 +28,11 @@
           <div class="right">
           <div class="butt">
           <img src="../img/log-out.png" alt="image">
-          <button>Sign in</button>
+          <a href="sign.html"><button>Sign in</button></a>
           </div>
           </div>
           </div>
-        <div class="section1b">
+        <div class="section1b" >
             <div class="left">
                 <h1>Nourish Your Body,
                      <br><span> Elevate Your Life</span></h1>
@@ -40,9 +40,8 @@
                     Every meal is a new chance to care for yourself.
                 </h2>
                 <div class="button_log">
-                    <button class="btn1">Log_in</button>
-                    <button class="btn2">Sign_in</button>
-                </div>
+                   <a href="login.html"><button class="btn1">Log_in</button></a>
+                   <a href="sign.html"><button class="btn2">Sign_in</button></a>                </div>
                 
             
             </div>
@@ -64,7 +63,7 @@
     <img src="../img/im3.jfif" class="img3">
   </div>
 
-  <div class="about-text">
+  <div class="about-text"id="about_us">
     <h1>About Us</h1>
 
     <p>
@@ -86,91 +85,145 @@
 
 </div>
 
-    <div class="section2">
-    <h1>Your Healthy Path</h1>
+    
+<div class="pricing-section">
 
-    <div class="prog">
+  <p class="small-title">Nutrition Plans</p>
+  <h1>Choose Your Best Plan</h1>
 
-        <button class="arrow">&#10094;</button>
+  <div class="pricing-container">
 
-        <div class="cards">
+    <!-- Weight Loss -->
+    <div class="pricing-card">
 
-            <div class="p1 card">
-                <img src="../img/im1.jfif" alt="">
-                <h3>Burn Plan</h3>
-                <p>$5.00</p>
-                <button>Buy Now</button>
-            </div>
+      <h2>WEIGHT LOSS</h2>
+      <span>Healthy body transformation</span>
 
-            <div class="p1 card">
-                <img src="../img/im2.jfif" alt="">
-                <h3>Vitality Program</h3>
-                <p>$3.00</p>
-                <button>Buy Now</button>
-            </div>
+      <h3>$100</h3>
+      <p class="price-text">per month</p>
 
-            <div class="p1 card">
-                <img src="../img/im3.jfif" alt="">
-                <h3>Mass Gain</h3>
-                <p>$4.00</p>
-                <button>Buy Now</button>
-            </div>
+      <ul>
+        <li>✔ Personalized fat loss meal plan</li>
+        <li>✔ Weekly nutrition guidance</li>
+        <li>✔ Healthy recipes and tips</li>
+        <li>✔ Body progress monitoring</li>
+      </ul>
 
-            <div class="p1 card">
-                <img src="../img/im1.jfif" alt="">
-                <h3>Weight Loss Plan</h3>
-                <p>$6.00</p>
-                <button>Buy Now</button>
-            </div>
-
-             <div class="p1 card">
-                <img src="../img/im1.jfif" alt="">
-                <h3>Energy Boost</h3>
-                <p>$6.00</p>
-                <button>Buy Now</button>
-            </div>
-
-             
-
-        </div>
-
-        <button class="arrow">&#10095;</button>
-
+      <button>SUBSCRIBE</button>
     </div>
+
+    <!-- Weight Gain -->
+    <div class="pricing-card active">
+
+      <h2>WEIGHT GAIN</h2>
+      <span>Build healthy muscle mass</span>
+
+      <h3>$200</h3>
+      <p class="price-text">per month</p>
+
+      <ul>
+        <li>✔ High-calorie nutrition program</li>
+        <li>✔ Muscle-building meal plans</li>
+        <li>✔ Personalized nutrition coaching</li>
+        <li>✔ Monthly body assessment</li>
+      </ul>
+
+      <button>SUBSCRIBE</button>
+    </div>
+
+    <!-- Weight Maintenance -->
+    <div class="pricing-card">
+
+      <h2>WEIGHT MAINTENANCE</h2>
+      <span>Maintain a balanced lifestyle</span>
+
+      <h3>$150</h3>
+      <p class="price-text">per month</p>
+
+      <ul>
+        <li>✔ Balanced daily meal plans</li>
+        <li>✔ Healthy lifestyle support</li>
+        <li>✔ Nutrition and wellness advice</li>
+        <li>✔ Long-term health tracking</li>
+      </ul>
+
+      <button>SUBSCRIBE</button>
+    </div>
+
+  </div>
+
 </div>
-<div class="section3">
-    <h1> The Articles</h1>
-  <div class="card">
-    <img src="../img/im1.jfif" alt="Healthy Nutrition">
-    <h3>PERSONALIZED NUTRITION PLANS</h3>
-    <p>
-      Our nutrition specialist provides customized meal plans
-      tailored to your health goals, lifestyle, and body needs.
-      Start your journey toward a healthier life today.
-    </p>
-    <a href="#">Healthy Lifestyle Programs</a>
+
+<div class="section3" id="blog">
+
+  <h1>Latest Nutrition Articles</h1>
+
+  <div class="blog-container">
+
+    <!-- Card 1 -->
+    <div class="blog-card">
+      <img src="../img/im1.jfif" alt="Nutrition Tips">
+
+      <div class="blog-content">
+        <div class="date">Jan 05, 2025</div>
+
+        <h3>
+          Healthy Eating Habits for a Better Lifestyle
+        </h3>
+
+        <p>
+          Learn simple and practical nutrition habits that help improve your energy,
+          strengthen your body, and support long-term wellness.
+        </p>
+
+        <a href="#">Read more..</a>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="blog-card">
+      <img src="../img/im2.jfif" alt="Meal Plans">
+
+      <div class="blog-content">
+        <div class="date">Feb 12, 2025</div>
+
+        <h3>
+          Personalized Meal Plans That Fit Your Goals
+        </h3>
+
+        <p>
+          Discover how customized nutrition plans can help you lose weight,
+          build healthy routines, and maintain a balanced lifestyle.
+        </p>
+
+        <a href="#">Read more..</a>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="blog-card">
+      <img src="../img/im3.jfif" alt="Nutrition Guide">
+
+      <div class="blog-content">
+        <div class="date">Mar 20, 2025</div>
+
+        <h3>
+          Why Professional Nutrition Guidance Matters
+        </h3>
+
+        <p>
+          Get expert advice and motivation from a certified nutrition specialist
+          to achieve healthier eating habits and lasting results.
+        </p>
+
+        <a href="blog.html">Read more..</a>
+      </div>
+    </div>
+
   </div>
 
-  <div class="card">
-    <img src="../img/im2.jfif" alt="Consultation">
-    <h3>WHY CHOOSE OUR DIETITIAN?</h3>
-    <p>
-      With professional expertise and practical guidance,
-      we help you improve eating habits, manage weight,
-      and achieve long-term wellness with confidence.
-    </p>
-    <a href="#">Professional Nutrition Support</a>
-  </div>
-
-  <div class="card">
-    <img src="../img/im3.jfif" alt="Nutrition Care">
-    <h3>EXPERT HEALTH GUIDANCE</h3>
-    <p>
-      We believe good nutrition is the key to a better life.
-      Our specialist supports you with trusted advice,
-      motivation, and results-focused care.
-    </p>
-    <a href="#">Meet Your Nutrition Expert</a>
+  <div class="view-btn">
+    <button onclick="window.location.href='blog.html'">View All</button>
   </div>
 
 </div>
@@ -181,7 +234,7 @@
         <img src="../img/im2.jfif" alt="nutritionist">
     </div>
 
-    <div class="right4">
+    <div class="right4" id="contact">
         <p class="small-title4">HEALING STARTS HERE</p>
 
         <h1>Get to Know Your<br>Nutritionist, Sophia</h1>
@@ -192,8 +245,8 @@
             designed for long-term results.
         </p>
 
-        <button>Learn More</button>
-    </div>
+        <button onclick="window.location.href='login.html'">Learn More</button>    
+      </div>
 
 </div>
 

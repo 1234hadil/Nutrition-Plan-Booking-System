@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="../css/paiment.css">
+</head>
+<div class="container">
+
+    <h1>Book Your Nutrition Consultation</h1>
+
+    <p class="subtitle">
+        Complete the form below to schedule your healthy lifestyle session
+    </p>
+
+    <!-- Payment Methods -->
+    <div class="services">
+
+        <div class="service active">
+            <h2>💳</h2>
+            <p>Credit Card</p>
+        </div>
+
+        <div class="service">
+            <h2>PayPal</h2>
+            <p>Pay With PayPal</p>
+        </div>
+
+    </div>
+
+    <div class="form-container">
+
+        <!-- Personal Info -->
+        <div class="form-section">
+
+            <h3>1 Personal Information</h3>
+
+            <div class="input-group">
+                <label>FULL NAME</label>
+                <input type="text" placeholder="Enter your name">
+            </div>
+
+            <div class="input-group">
+                <label>EMAIL ADDRESS</label>
+                <input type="email" placeholder="example@gmail.com">
+            </div>
+
+            <div class="row">
+
+                <div class="input-group">
+                    <label>AGE</label>
+                    <input type="number" placeholder="25">
+                </div>
+
+                <div class="input-group">
+                    <label>WEIGHT (KG)</label>
+                    <input type="number" placeholder="70">
+                </div>
+
+            </div>
+
+            <div class="input-group">
+                <label>FITNESS GOAL</label>
+
+                <select>
+                    <option>Lose Weight</option>
+                    <option>Gain Muscle</option>
+                    <option>Healthy Lifestyle</option>
+                </select>
+
+            </div>
+
+        </div>
+
+        <!-- Appointment Info -->
+        <div class="form-section">
+
+            <h3>2 Appointment Details</h3>
+
+            <div class="input-group">
+                <label>PREFERRED DATE</label>
+                <input type="date">
+            </div>
+
+            <div class="input-group">
+                <label>PREFERRED TIME</label>
+                <input type="time">
+            </div>
+
+            <div class="input-group">
+                <label>ADDITIONAL NOTES</label>
+                <textarea placeholder="Write your health goals..."></textarea>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="buttons">
+
+        <button class="btn cancel">CANCEL</button>
+
+        <div>
+            <button class="btn back">BACK</button>
+            <button class="btn book">BOOK NOW</button>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

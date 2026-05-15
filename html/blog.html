@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../css/blog.css">
+<title>Blog Page</title>
+
+</head>
+<body>
+
+<header>
+
+    <div class="overlay">
+
+        <h1 class="blog-title">Our Blog</h1>
+
+    </div>
+
+</header>
+
+<div class="container" id="blogPage">
+
+    <div class="articles">
+
+    <div class="article">
+
+        <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?q=80&w=1200">
+
+        <div class="article-content">
+
+            <h3>Healthy Diet - WHO</h3>
+
+            <p>
+                WHO explains the importance of balanced nutrition for disease prevention.
+            </p>
+
+            <a href="https://www.who.int/news-room/fact-sheets/detail/healthy-diet" target="_blank">
+                Read more...
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="article">
+
+        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=1200">
+
+        <div class="article-content">
+
+            <h3>Healthy Eating Plate - Harvard</h3>
+
+            <p>
+                Harvard researchers present a guide for balanced healthy meals.
+            </p>
+
+            <a href="https://nutritionsource.hsph.harvard.edu/healthy-eating-plate/" target="_blank">
+                Read more...
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="article">
+
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200">
+
+        <div class="article-content">
+
+            <h3>Nutrition Basics - Mayo Clinic</h3>
+
+            <p>
+                Learn the fundamentals of healthy eating and nutrition.
+            </p>
+
+            <a href="https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/basics/nutrition-basics/hlv-20049477" target="_blank">
+                Read more...
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="article">
+
+        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1200">
+
+        <div class="article-content">
+
+            <h3>CDC Healthy Eating</h3>
+
+            <p>
+                CDC shares healthy eating recommendations for better health.
+            </p>
+
+            <a href="https://www.cdc.gov/nutrition/index.html" target="_blank">
+                Read more...
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="article">
+
+        <img src="https://images.unsplash.com/photo-1547592180-85f173990554?q=80&w=1200">
+
+        <div class="article-content">
+
+            <h3>NHS Eat Well</h3>
+
+            <p>
+                NHS provides advice about healthy food choices and diet.
+            </p>
+
+            <a href="https://www.nhs.uk/live-well/eat-well/" target="_blank">
+                Read more...
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="article">
+
+        <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?q=80&w=1200">
+
+        <div class="article-content">
+
+            <h3>Heart Healthy Eating</h3>
+
+            <p>
+                Healthy nutrition habits help protect heart health.
+            </p>
+
+            <a href="https://www.heart.org/en/healthy-living/healthy-eating" target="_blank">
+                Read more...
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="article">
+
+        <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?q=80&w=1200">
+
+        <div class="article-content">
+
+            <h3>MedlinePlus Nutrition</h3>
+
+            <p>
+                Nutrition information and advice from medical experts.
+            </p>
+
+            <a href="https://medlineplus.gov/nutrition.html" target="_blank">
+                Read more...
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+<script>
+
+function openArticle(title,image,text){
+
+    document.getElementById("blogPage").style.display="none";
+
+    document.getElementById("articlePage").style.display="block";
+
+    document.getElementById("articleTitle").innerText=title;
+
+    document.getElementById("articleImage").src=image;
+
+    document.getElementById("articleText").innerText=text;
+}
+
+function goBack(){
+
+    document.getElementById("blogPage").style.display="block";
+
+    document.getElementById("articlePage").style.display="none";
+}
+
+</script>
+
+</body>
+</html>

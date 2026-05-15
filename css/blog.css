@@ -1,0 +1,115 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:#fafaf8;
+}
+
+/* HEADER */
+
+header{
+    width:100%;
+    height:250px;
+    background:url("../img/Blog.jfif") center/cover;
+    background-size:cover;
+    background-position:center;
+}
+
+.overlay{
+    width:100%;
+    height:100%;
+    background: rgba(129, 158, 86, 0.5);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.blog-title{
+    color:white;
+    font-size:50px;
+}
+
+/* BLOG */
+
+.container{
+    width:85%;
+    margin:40px auto;
+}
+
+.article{
+    display:flex;
+    background:white;
+    padding:15px;
+    margin-bottom:20px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.article:hover{
+    transform:scale(1.02);
+}
+
+.article img{
+    width:220px;
+    height:140px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.article-content{
+    padding-left:20px;
+}
+
+.article-content h3{
+    margin-bottom:10px;
+}
+
+.article-content p{
+    color:gray;
+    margin-bottom:10px;
+    line-height:1.5;
+}
+
+.article-content a{
+    text-decoration:none;
+    color:#6c8644;
+}
+
+/* ARTICLE DETAILS */
+
+#articlePage{
+    display:none;
+    width:80%;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+}
+
+#articlePage img{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+    border-radius:10px;
+    margin:20px 0;
+}
+
+#articleText{
+    line-height:1.8;
+    color:#444;
+}
+
+.back-btn{
+    margin-top:20px;
+    padding:10px 20px;
+    border:none;
+    background:black;
+    color:white;
+    cursor:pointer;
+    border-radius:5px;
+}

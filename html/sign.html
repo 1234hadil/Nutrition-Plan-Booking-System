@@ -15,51 +15,87 @@
     </div>
 
     <div class="right-box">
+
         <h2>Client Sign Up</h2>
 
-        <div class="input-box">
-            <label>Full Name</label>
-            <input type="text" placeholder="Enter Full Name">
-        </div>
+        <form>
 
-        <div class="input-box">
-            <label>Email</label>
-            <input type="email" placeholder="Enter Email">
-        </div>
+            <div class="input-box">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter Full Name" required>
+            </div>
 
-        <div class="input-box">
-            <label>Password</label>
-            <input type="password" placeholder="Enter Password">
-        </div>
+            <div class="input-box">
+                <label>Email</label>
+                <input type="email" placeholder="Enter Email" required>
+            </div>
 
-        <div class="input-box">
-            <label>Phone Number</label>
-            <input type="tel" placeholder="Enter Phone Number">
-        </div>
+            <div class="input-box">
+                <label>Password</label>
+                <input type="password" placeholder="Enter Password" required>
+            </div>
 
-        <div class="input-box">
-            <label>Choose Program</label>
-            <select>
-                <option>Weight Loss</option>
-                <option>Mass Gain</option>
-                <option>Healthy Balance</option>
-                <option>Custom Plan</option>
-            </select>
-        </div>
+            <div class="input-box">
+                <label>Phone Number</label>
+                <input type="tel" placeholder="Enter Phone Number" required>
+            </div>
 
-        <div class="input-box">
-            <label>Payment Method</label>
-            <select>
-                <option>Credit Card</option>
-                <option>PayPal</option>
-            </select>
-        </div>
+            <div class="input-box">
+                <label>Choose Program</label>
+                <select required>
+                    <option value="">Select Program</option>
+                    <option>Weight Loss</option>
+                    <option>Mass Gain</option>
+                    <option>Healthy Balance</option>
+                    <option>Custom Plan</option>
+                </select>
+            </div>
 
-        <button class="btn">Sign Up</button>
+            <div class="input-box">
+                <label>Payment Method</label>
+                <select required>
+                    <option value="">Select Payment</option>
+                    <option>Credit Card</option>
+                    <option>PayPal</option>
+                </select>
+            </div>
+
+            <button type="button" class="btn" onclick="checkForm()">Sign Up</button>
+        </form>
+
     </div>
 
-</div>
 
-</div>
+<script>
+
+function checkForm() {
+
+    let name = document.querySelector('input[type="text"]').value.trim();
+    let email = document.querySelector('input[type="email"]').value.trim();
+    let password = document.querySelector('input[type="password"]').value.trim();
+    let phone = document.querySelector('input[type="tel"]').value.trim();
+
+    if (name === "" || email === "" || password === "" || phone === "") {
+
+        alert("Please fill all fields");
+        return;
+    }
+
+    if (password.length < 6) {
+
+        alert("Password must contain at least 6 characters");
+        return;
+    }
+
+    if (isNaN(phone)) {
+
+        alert("Phone number must contain only numbers");
+        return;
+    }
+
+    window.location.href = "login.html";
+}
+
+</script>
 </body>
 </html>

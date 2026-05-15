@@ -267,140 +267,229 @@ button:hover{
   text-decoration: none;
   border-radius: 8px;
 }
+/*section2 about plan*/
 
-.section2{
-    width: 100%;
-    padding: 40px;
-    text-align: center;
+.pricing-section{
+  width: 100%;
+  padding: 80px 20px;
+  background: #dfe5de;
+  text-align: center;
 }
 
-.section2 h1{
-    color: #2f3a33;
-    margin-bottom: 30px;
+.small-title{
+  color: #6c8644;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
-.prog{
-    background: #dfe5de;
-    /*border-radius: 5px;*/
-    padding: 20px;
-    min-height: 520px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.pricing-section h1{
+  font-size: 42px;
+  color: #222;
+  margin-bottom: 60px;
 }
 
-.cards{
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-
-.card{
-    width: 180px;          
-    height: 260px;         
-    padding: 18px;
-    border-radius: 20px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.card:nth-child(1){background:#94ad60;}
-.card:nth-child(2){background:#6B8E23;}
-.card:nth-child(3){background:#9baa7d;}
-.card:nth-child(4){background:#6B8E23;}
-.card:nth-child(5){background:#99AD7A;}
-.card:nth-child(6){background:#6B8E23;}
-
-.card img{
-    width: 75px;
-    height: 75px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-top: -55px;
-    border: 4px solid white;
-}
-
-.card h3{
-    font-size: 18px;
-    margin: 15px 0;
-}
-
-.card p{
-    font-size: 18px;
-}
-
-.card button{
-    margin-top: 12px;
-    padding: 8px 18px;
-    border: none;
-    border-radius: 18px;
-    background: white;
-    color: black;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.arrow{
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    border: none;
-    background: white;
-    cursor: pointer;
-    font-size: 20px;
-}
-
-.section3 {
+.pricing-container{
   display: flex;
   justify-content: center;
   gap: 30px;
-  padding: 50px;
-  background: #dfe5de;
-  position: relative;
-margin-top: 80px;
-}
-.section3 h1{
-   position: absolute;
-    top: -90px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.section3 .card {
-  width: 300px;
-  background: white;
-  text-align: center;
-  padding-bottom: 20px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
 }
 
-.section3 .card img {
+.pricing-card{
+  width: 320px;
+  background: #fff;
+  border: 2px solid #ddd;
+  border-radius: 18px;
+  padding: 40px 30px;
+  transition: 0.3s;
+}
+
+.pricing-card:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.pricing-card.active{
+  border-color: #6c8644;
+}
+
+.pricing-card h2{
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.pricing-card span{
+  color: #888;
+  font-size: 14px;
+}
+
+.pricing-card h3{
+  font-size: 55px;
+  color: #111;
+  margin: 25px 0 10px;
+}
+
+.price-text{
+  color: #888;
+  margin-bottom: 30px;
+}
+
+.pricing-card ul{
+  list-style: none;
+  text-align: left;
+  margin-bottom: 35px;
+}
+
+.pricing-card ul li{
+  margin-bottom: 18px;
+  color: #555;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.pricing-card button{
   width: 100%;
-  height: 180px;
+  padding: 14px;
+  border: none;
+  border-radius: 30px;
+  background: #d1d1d1;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pricing-card.active button{
+  background: #6c8644;
+}
+
+.pricing-card button:hover{
+  opacity: 0.9;
+}
+
+@media(max-width:992px){
+
+  .pricing-container{
+    gap: 20px;
+  }
+
+  .pricing-card{
+    width: 100%;
+    max-width: 350px;
+  }
+
+}
+
+
+.section3{
+  max-width: 1200px;
+  margin: auto;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.section3 h1{
+  font-size: 38px;
+  margin-bottom: 50px;
+  color: #111;
+  font-weight: 700;
+}
+
+.blog-container{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.blog-card{
+  width: 320px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.blog-card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.blog-card img{
+  width: 100%;
+  height: 210px;
   object-fit: cover;
 }
 
-.section3 .card h3 {
-  color: #6c746d;
-  font-size: 16px;
-  margin: 20px 0 10px;
+.blog-content{
+  padding: 22px;
+  text-align: left;
 }
 
-.section3 .card p {
+.date{
+  color: #7a7a7a;
   font-size: 14px;
-  color: #777;
-  line-height: 1.6;
-  padding: 0 20px;
+  margin-bottom: 14px;
+  display: block;
 }
 
-.section3 .card a {
-  display: block;
-  margin-top: 20px;
-  color: #aaa;
+.blog-content h3{
+  font-size: 23px;
+  line-height: 1.5;
+  color: #111;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.blog-content p{
+  color: #777;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.blog-content a{
   text-decoration: none;
-  font-size: 13px;
+  color: #6c8644;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.view-btn{
+  margin-top: 50px;
+}
+
+.view-btn button{
+  padding: 14px 45px;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.view-btn button:hover{
+  background: #6c8644;
+  color: #fff;
+  border-color: #111;
+}
+
+@media(max-width:992px){
+
+  .blog-container{
+    gap: 20px;
+  }
+
+  .blog-card{
+    width: 100%;
+    max-width: 350px;
+  }
+
 }
 /*about nutristion*/
 .section4{
